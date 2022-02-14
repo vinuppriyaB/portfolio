@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 200px;
+    position: sticky;
+    top:0;
+    z-index: 100;
+    gap:25px;
+    
+    /* width: 100%; */
+    
+    background:black !important; 
+    color: white;
+
+    
+}
+.header__right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+
+}
+.heading{
+    padding: 5px;
+   
+  transition: all 0.5s ease-out;
+}
+.select{
+    color:teal;
+    font-size: 20px;
+    font-weight: 800;
+}
+.heading:hover{
+    
+    color:teal;
+    border-bottom: 3px solid white;
+
+}

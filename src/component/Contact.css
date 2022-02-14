@@ -1,0 +1,47 @@
+.contact{
+    width: 1200px;
+    margin:20px auto;
+    
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    /* align-items: center; */
+    /* background-color: rgb(250, 237, 250); */
+}
+.Contact_heading{
+    font-size: 50px;
+}
+.contact_image{
+    text-align: center;
+    margin:0px;
+    padding: 0px;
+}
+.contact_text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.text_details>p{
+    
+    font-size: 27px;
+    font-weight: 500 !important;
+}
+
+.contact_icon{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+}
+.contact_icon>p{
+    font-size: 17px;
+    font-weight: 500 !important;
+}
+.icon{
+    height: 50px !important;
+    width:50px !important;
+    color:teal;
+}
+.contact_mail>h2{
+    color:rgb(0, 40, 100);
+    font-size: 30px;
+}
