@@ -12,6 +12,7 @@ export function Header(){
     
 
     return (
+        <div className="nav_bar">
         <div className="header">
             <div className="header__left">
 
@@ -47,6 +48,7 @@ export function Header(){
             </div>
                 
             </div>
+        </div>
         </div>
     )
 }

@@ -1,20 +1,28 @@
 .contact{
-    width: 1200px;
-    margin:20px auto;
+    /* width: 1200px; */
     
+    max-width: 1200px;
+
+    margin:0px auto;
     display: flex;
     flex-direction: column;
     gap:30px;
-    /* align-items: center; */
-    /* background-color: rgb(250, 237, 250); */
+    padding: 10px 50px;
 }
 .Contact_heading{
     font-size: 50px;
 }
-.contact_image{
+.contact_imagebox{
     text-align: center;
-    margin:0px;
+    
+    margin: 0px;
+}
+.contact_image{
+    
+    
     padding: 0px;
+    height: 400px;
+    width: 500px;
 }
 .contact_text{
     display: flex;
@@ -32,7 +40,7 @@
     justify-content: center;
     gap:50px;
 }
-.contact_icon>p{
+.contact_icon>div>a>p{
     font-size: 17px;
     font-weight: 500 !important;
 }
@@ -44,4 +52,35 @@
 .contact_mail>h2{
     color:rgb(0, 40, 100);
     font-size: 30px;
+}
+
+@media only screen and (max-width:425px)
+{
+    .Contact_heading{
+        font-size: 30px;
+    }
+    .contact_image{
+    height: 270px;
+    width: 300px;
+    }
+    .text_details>p{
+    
+        font-size: 17px;
+        font-weight: 500 !important;
+    }
+    .contact_icon>div>a>p{
+        font-size: 17px !important;
+        font-weight: 200 !important;
+        background-color: thistle;
+    }
+    .icon{
+        height: 30px !important;
+        width:30px !important;
+        color:teal;
+    }
+    .contact_mail>h2{
+        color:rgb(0, 40, 100);
+        font-size: 20px;
+    }
+
 }

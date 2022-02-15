@@ -3,6 +3,8 @@ import Button from '@mui/material/Button';
 import "./Projects.css";
 import youtube from '../image/youtube.png';
 import stack from '../image/stack.png';
+import movielist from '../image/movielist.png';
+import prettyshop from '../image/prettyshop.png';
 
 
 
@@ -27,17 +29,17 @@ import stack from '../image/stack.png';
     },
     {
         name:"E-Commerce Website",
-        image:stack,
-        liveLink:"https://sad-nightingale-2f5997.netlify.app",
-        gitFrontLink:"https://github.com/vinuppriyaB/f-youtube-clone",
-        gitBackLink:"https://github.com/vinuppriyaB/back-yt",
+        image:prettyshop,
+        liveLink:"https://suspicious-kare-885e10.netlify.app",
+        gitFrontLink:"https://github.com/vinuppriyaB/Ecommerce-front",
+        gitBackLink:"https://github.com/vinuppriyaB/Ecommerce-node",
         discription:"This is wesite of 'PRETTY' shop. It having fuctionality of search products by filter and add to cart. Using Stripe API for payment processing.",   
-        by:"Createdby ReactJS,Redux,Nodejs,JWT,Express,MongoDB,Mongoose ,Stripe"
+        by:"Createdby ReactJS,Redux, Nodejs,JWT, Express, MongoDB,Mongoose ,Stripe"
     },
     {
         name:"Movie List",
-        image:stack,
-        liveLink:"https://sad-nightingale-2f5997.netlify.app",
+        image:movielist,
+        liveLink:"https://zealous-fermi-d50937.netlify.app",
         gitFrontLink:"https://github.com/vinuppriyaB/react-movielist",
         gitBackLink:"https://github.com/vinuppriyaB/node-movieproject",
         discription:"This project is my first full stack project ,where I learnt API calls, CRUD operation.Here we can edit,delete,add the movie details and display all details about movie",   
@@ -92,7 +94,7 @@ function ProjectRow({name,image,liveLink,gitFrontLink,gitBackLink,discription,by
                 </a>
                 </div>
             </div>
-            <div className="projectRow_image">
+            <div className="ProjectRow_image">
             <img className="Project_image" src={ image } alt={name} />
             </div>
         </div>

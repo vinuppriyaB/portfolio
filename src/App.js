@@ -9,32 +9,39 @@ import About from './component/About';
 
 function App() {
   return (
+    <div>
+
     <div className="App">
-    <Router>
-    
-    <Switch>
-      <Route  exact path="/">
-     <Header/>
-     <About/>
-     <Skills/>
-     <Projects/>
-     <Contact/>
-     </Route>
-     <Route  exact path="/skill">
-     <Header/>
-     <Skills/>
-     </Route>
-     <Route  exact path="/project">
-     <Header/>
-     <Projects/>
-     </Route>
-     <Route  exact path="/contact">
-     <Header/>
-     <Contact/>
-     </Route>
-     </Switch>
-     </Router>
+            <Router>
+
+
+              <Switch>
+
+                <Route  exact path="/">
+                <Header/>
+                  <About />
+                  <Skills/>
+                  <Projects/>
+                  <Contact/>
+              </Route>
+              <Route  exact path="/skill">
+              <Header/>
+                <Skills/>
+              </Route>
+              <Route  exact path="/project">
+              <Header/>
+                <Projects/>
+              </Route>
+              <Route  exact path="/contact">
+              <Header/>
+                <Contact/>
+              </Route>
+              </Switch>
+
+              </Router>
+              </div>
     </div>
+    
   );
 }
 

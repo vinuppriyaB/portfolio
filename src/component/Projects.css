@@ -1,11 +1,14 @@
 .project{
 
-    width: 1200px;
-    margin:20px auto;
-    
+    max-width: 1200px;
+    margin:0px auto;
+    padding: 10px 50px;
     display: flex;
     flex-direction: column;
+
+    justify-content: space-between;
     gap:30px;
+    /* background-color: thistle; */
     
 }
 .project_heading{
@@ -23,11 +26,11 @@
 
 
 }
-.projectRow_image{
-    flex:1;
-    margin-right: 40px;
-    height:450px;
+.ProjectRow_image{
+    
+    /* margin-right: 40px; */
 
+flex:1;
 }
 .Project_image{
     width:600px;
@@ -42,7 +45,7 @@
 }
 .projectRow_text{
     height:350px;
-    flex:1;
+    flex:2;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -75,7 +78,7 @@
     background-color: black !important;
     color: white !important;
     font-size: 20px !important;
-    border-radius: 10% !important;
+    
 
     margin-left: 30px;
     
@@ -99,18 +102,73 @@ a{
         flex-direction: column;
         padding-bottom: 20px;
     }
+    .project_name>h4{
+        font-size: 20px;
+    }
     .projectRow_text{
-        height:350px;
-    flex:1;
+       
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    justify-content: space-around;
+    
         
 
     }
     .Project_image{
-        width:90% ;
+        width: 500px;
+        height: 500px;
+    }
+    .project_buttons{
+    margin: 20px 0px 5px 0px;
+    
+    }
+
+}
+
+@media only screen and (max-width:425px)
+{
+    .project_heading{
+        font-size: 30px;
+    }
+    .projectRow{
+        display:flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .projectRow_text{
+       
+    display: flex;
+    flex-direction: column;
+    
+    /* align-items: center; */
+    
+        
+
+    }
+    .project_description>p{
+        font-size: 15px;
+        /* margin:5px;
+        line-height: 1.6; */
         
     }
+    .project_by>p{
+        /* margin:10px !important; */
+        font-size: 15px;
+        color:rgb(83, 81, 81);
+    }
+    .Project_image{
+        width: 300px;
+        height: 300px;
+    }
+    .project_buttons{
+    
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .project_button{
+        font-size: 10px !important;
+    }
+
 }

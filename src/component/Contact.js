@@ -10,8 +10,8 @@ export const Contact = () => {
     return (
         <div className="contact">
         <h2 className="Contact_heading">CONTACT DETAILS</h2>
-        <div className="contact_image">
-        <img alt="contact us" height="300px" width="500px"  src={ require("../image/contact.jpg") }/>
+        <div className="contact_imagebox">
+        <img alt="contact us" className="contact_image"  src={ require("../image/contact.jpg") }/>
         </div>
         <div className="contact_text">
         <div className="text_details">

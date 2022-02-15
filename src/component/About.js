@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '@mui/material/Button';
 import "./About.css";
-import about  from '../image/contact1.jpg';
+import about  from '../image/about.jpg';
 
 
 const About = () => {
@@ -11,14 +11,14 @@ const About = () => {
         <h2 className="About_heading">ABOUT ME</h2> 
 
         <div className="about_text">  
-    
-        <p>Hai, </p>
-         <p>I am self-motivated, highly passionate and quickly adaptable person
-         looking for an opportunity to work in a challenging organization where I
-         can learn new skills, expand my knowledge and to work towards the
-         growth of the organization to the best of my abilities.</p>
 
-        </div> 
+     
+       <p> I am Self-motivated, highly passionate and quickly adaptable person 
+       looking for an opportunity to work in a challenging organization where I can learn 
+       new skills, expand my knowledge and to work towards the growth of the organization 
+       to the best of my abilities.</p>
+         </div>
+
         <div className="About_image">
 
         <div>
