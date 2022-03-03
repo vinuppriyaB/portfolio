@@ -1,174 +1,205 @@
-.project{
+/* .project {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
 
-    max-width: 1200px;
-    margin:0px auto;
-    padding: 10px 50px;
+  justify-content: space-between;
+  gap: 30px;
+  
+}
+.project_heading {
+  font-size: 50px;
+}
+.projectRow {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-radius: 5px;
+  padding: 10px 10px;
+  border-bottom: 1px solid black;
+}
+.ProjectRow_image {
+
+  flex: 1;
+}
+.Project_image {
+  width: 600px;
+  height: 450px;
+  object-fit: contain;
+  border-radius: 10%;
+  overflow: hidden;
+}
+.Project_image:hover {
+  object-fit: cover;
+  border-radius: 30px;
+}
+.projectRow_text {
+  height: 350px;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+}
+.project_name > h4 {
+  font-size: 35px;
+  margin: 5px !important ;
+}
+.project_description > p {
+  font-size: 20px;
+  margin: 5px;
+  line-height: 1.6;
+}
+.project_by > p {
+  margin: 10px !important;
+  font-size: 18px;
+  color: rgb(83, 81, 81);
+}
+.project_buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.project_button {
+  background-color: black !important;
+  color: white !important;
+  font-size: 20px !important;
+
+  margin-left: 30px;
+}
+.project_button :hover {
+  background-color: rgb(252, 232, 214) !important;
+  color: black !important;
+  font-size: 25px !important;
+  font-weight: 800;
+}
+a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .projectRow {
     display: flex;
     flex-direction: column;
-
-    justify-content: space-between;
-    gap:30px;
-    /* background-color: thistle; */
-    
-}
-.project_heading{
-    font-size: 50px;
-}
-.projectRow{
-
-    display: flex;
-    align-items: center;
-    gap:30px;
-    border-radius: 5px;
-    padding: 10px 10px;
-    border-bottom: 1px solid black;
-    
-
-
-}
-.ProjectRow_image{
-    
-    /* margin-right: 40px; */
-
-flex:1;
-}
-.Project_image{
-    width:600px;
-    height:450px;
-    object-fit:contain;
-    border-radius: 10%;
-    overflow: hidden;
-}
-.Project_image:hover{
-    object-fit: cover;
-    border-radius: 30px;
-}
-.projectRow_text{
-    height:350px;
-    flex:2;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: space-around;
-    /* text-align: center; */
-    
-}
-.project_name>h4{
-    font-size: 35px;
-    margin:5px !important ;
-}
-.project_description>p{
+    padding-bottom: 20px;
+  }
+  .project_name > h4 {
     font-size: 20px;
-    margin:5px;
-    line-height: 1.6;
-    
-}
-.project_by>p{
-    margin:10px !important;
-    font-size: 18px;
-    color:rgb(83, 81, 81);
-}
-.project_buttons{
-    
-    display: flex;
-    gap:20px;
-}
-
-.project_button{
-    background-color: black !important;
-    color: white !important;
-    font-size: 20px !important;
-    
-
-    margin-left: 30px;
-    
-}
-.project_button
-    :hover{
-    background-color: rgb(252, 232, 214) !important;
-    color: black !important;
-    font-size: 25px !important;
-    font-weight: 800;
-
-}
-a{
-    text-decoration: none;
-}
-
-@media only screen and (max-width:1200px)
-{
-    .projectRow{
-        display:flex;
-        flex-direction: column;
-        padding-bottom: 20px;
-    }
-    .project_name>h4{
-        font-size: 20px;
-    }
-    .projectRow_text{
-       
+  }
+  .projectRow_text {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    
-        
 
-    }
-    .Project_image{
-        width: 500px;
-        height: 500px;
-    }
-    .project_buttons{
+  }
+  .Project_image {
+    width: 500px;
+    height: 500px;
+  }
+  .project_buttons {
     margin: 20px 0px 5px 0px;
-    
-    }
-
+  }
 }
 
-@media only screen and (max-width:425px)
-{
-    .project_heading{
-        font-size: 30px;
-    }
-    .projectRow{
-        display:flex;
-        flex-direction: column;
-        padding-bottom: 20px;
-    }
-    .projectRow_text{
-       
+@media only screen and (max-width: 425px) {
+  .project_heading {
+    font-size: 30px;
+  }
+  .projectRow {
     display: flex;
     flex-direction: column;
-    
-    /* align-items: center; */
-    
-        
+    padding-bottom: 20px;
+  }
+  .projectRow_text {
+    display: flex;
+    flex-direction: column;
 
-    }
-    .project_description>p{
-        font-size: 15px;
-        /* margin:5px;
-        line-height: 1.6; */
-        
-    }
-    .project_by>p{
-        /* margin:10px !important; */
-        font-size: 15px;
-        color:rgb(83, 81, 81);
-    }
-    .Project_image{
-        width: 300px;
-        height: 300px;
-    }
-    .project_buttons{
     
-        display: flex;
-        flex-direction: column;
-        
-        
-    }
-    .project_button{
-        font-size: 10px !important;
-    }
+  }
+  .project_description > p {
+    font-size: 15px;
 
+  }
+  .project_by > p {
+  
+    font-size: 15px;
+    color: rgb(83, 81, 81);
+  }
+  .Project_image {
+    width: 300px;
+    height: 300px;
+  }
+  .project_buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .project_button {
+    font-size: 10px !important;
+  }
+}
+
+.Project_card {
+  display: flex;
+  justify-content: space-evenly;
+
+  gap: 30px;
+  flex-wrap: wrap;
+} */
+
+.project_container {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5rem;
+}
+
+.Project_cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 3rem;
+}
+
+.project_heading {
+  font-size: 3rem;
+  padding: 0rem 5rem;
+}
+.project_line {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  padding: 0rem 5rem;
+}
+
+.project_btn {
+  color: rgba(234, 180, 30) !important;
+  /* background-color:  */
+  /* border: 1px solid rgba(234, 180, 30) !important; */
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    Liberation Mono, Courier New, monospace !important;
+  /* font-size: 2rem !important; */
+  font-size: 20px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projectIcon {
+  width: 20px !important;
+  height: 20px !important;
+}
+.project_skill {
+  color: aliceblue;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  .project_skill {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .project_skill {
+    font-size: 11px;
+  }
 }

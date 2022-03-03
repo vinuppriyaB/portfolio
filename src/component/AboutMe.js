@@ -1,5 +1,5 @@
 import React from "react";
-import "./Skills.css";
+import "./AboutMe.css";
 import mongodb from "../image/mongodb.png";
 import html from "../image/html.png";
 import css from "../image/css.png";
@@ -18,7 +18,7 @@ const skill = [
   },
   {
     img: js,
-    title: "javascript",
+    title: "Javascript",
   },
   {
     img: react,
@@ -43,15 +43,36 @@ const skill = [
   },
 ];
 
-export const Skills = () => {
+const AboutMe = () => {
   return (
-    <div className="skills">
-      <h2 className="skill_heading">SKILLS</h2>
-      <div className="skills_imageContainer">
+    <div className="AboutMe_container" id="About">
+      <p className="About_heading">About</p>
+      <div className="About_wrapper">
+        <div className="about_text">
+          <p>
+            I am Self-motivated, highly passionate and quickly adaptable person
+            looking for an opportunity to work in a challenging organization
+            where I can learn new skills, expand my knowledge and to work
+            towards the growth of the organization to the best of my abilities.
+          </p>
+          <p>
+            I am admired by the working function of webpage, which make me more
+            interest on learning how they work. so as started to learn on myself
+            using stuffs in online.
+          </p>
+          <p>
+            currently: Doing certification as MERN stack developer in GUVI Geek
+            Networks, IITM Research Park
+          </p>
+          <p>Here are a few technologies that I work with:-</p>
+        </div>
+        <div className="about_image"></div>
+      </div>
+      <div className="Skill_imageContainer">
         {skill.map((s, index) => (
-          <div className="skills_imagebox">
-            <p>{s.title}</p>
-            <img className="skills_image" src={s.img} alt={s.title} />
+          <div className="Skill_imagebox">
+            <p className="Skill_titles">{s.title}</p>
+            <img className="Skill_image" src={s.img} alt={s.title} />
           </div>
         ))}
       </div>
@@ -59,20 +80,4 @@ export const Skills = () => {
   );
 };
 
-//   <p>ExpressJS</p>
-// </div>
-// <div className="skills_imagebox">
-//   <img
-//     className="skills_image"
-//     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTTzPAw-55ssm1Im594xYZ9eRQu2JylrkYLg&usqp=CAU"
-//     alt="MongoDB"
-//   />
-//   <p>MongoDB</p>
-// </div>
-// <div className="skills_imagebox">
-//   <img
-//     className="skills_image1"
-//     src="data:image/png;base64,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"
-//     alt="Mongoose"
-//   />
-//   <p>Mongoose</p>
+export default AboutMe;
