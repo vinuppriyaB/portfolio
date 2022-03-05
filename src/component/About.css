@@ -84,9 +84,7 @@ a{
 
     }
 } */
-html {
-  font-size: 1vw;
-}
+
 .About_container {
   min-height: 53vw;
   display: flex;
@@ -121,7 +119,7 @@ html {
   border: 1px solid rgba(234, 180, 30) !important;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     Liberation Mono, Courier New, monospace !important;
-  font-size: 2.5rem !important;
+  font-size: 2.25rem !important;
 }
 .icon {
   height: 2.5rem !important;
@@ -143,7 +141,7 @@ html {
     display: none;
   }
   .myname {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: bolder;
   }
 

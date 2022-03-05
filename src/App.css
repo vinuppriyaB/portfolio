@@ -10,4 +10,10 @@ body {
 }
 html {
   scroll-behavior: smooth;
+  font-size: 1vw;
+}
+@media only screen and (max-width: 425px) {
+  html {
+    font-size: 3vw;
+  }
 }

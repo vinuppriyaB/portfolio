@@ -31,7 +31,10 @@ export function Header() {
     <div className="nav_bar">
       <div className="header">
         <div className="header_left">
-          <p>VINUPPRIYA BALACHANDRAN</p>
+          <p>
+            <span className="about_span">V</span>INUPPRIYA
+            <span className="about_span"> B</span>ALACHANDRAN
+          </p>
         </div>
 
         <div className="header__right bigscreen">

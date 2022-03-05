@@ -31,7 +31,7 @@ export const Contact = () => {
             >
               <LinkedInIcon className="contact_icon" />
 
-              <p>Linkedin</p>
+              <p>LinkedIn</p>
             </a>
           </div>
           <div>

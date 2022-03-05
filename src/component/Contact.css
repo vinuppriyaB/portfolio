@@ -82,7 +82,7 @@ html {
   font-size: 1vw;
 }
 .Contact_container {
-  min-height: 40vw;
+  /* min-height: 40vw; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,8 +93,9 @@ html {
   font-size: 3rem;
 }
 .text_details > p {
-  font-size: 2rem;
+  font-size: 1.75rem;
   line-height: 10px;
+  color: rgba(160, 167, 165);
 }
 .contact_Link {
   display: flex;
@@ -107,12 +108,32 @@ html {
   text-decoration: none;
 }
 .contact_Link > div > a > p {
-  font-size: 2rem;
+  font-size: 1.75rem;
+  color: rgba(160, 167, 165);
 }
 .contact_icon {
   height: 4rem !important;
   width: 4rem !important;
   color: rgba(234, 180, 30) !important;
+}
+@media only screen and (max-width: 1024px) {
+  .Contact_heading {
+    font-size: 3rem;
+  }
+  .text_details > p {
+    margin: 0px;
+    font-size: 2rem;
+    line-height: 5rem;
+    color: rgba(160, 167, 165);
+  }
+  .contact_Link > div > a > p {
+    font-size: 2rem;
+    color: rgba(160, 167, 165);
+  }
+  .contact_icon {
+    height: 5rem !important;
+    width: 5rem !important;
+  }
 }
 @media only screen and (max-width: 425px) {
   .Contact_heading {
@@ -120,11 +141,13 @@ html {
   }
   .text_details > p {
     margin: 0px;
-    font-size: 3rem;
-    line-height: 5rem;
+    font-size: 3.5rem;
+    line-height: 5.5rem;
+    color: rgba(160, 167, 165);
   }
   .contact_Link > div > a > p {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    color: rgba(160, 167, 165);
   }
   .contact_icon {
     height: 5rem !important;

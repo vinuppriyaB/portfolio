@@ -50,19 +50,22 @@ const AboutMe = () => {
       <div className="About_wrapper">
         <div className="about_text">
           <p>
-            I am Self-motivated, highly passionate and quickly adaptable person
-            looking for an opportunity to work in a challenging organization
-            where I can learn new skills, expand my knowledge and to work
-            towards the growth of the organization to the best of my abilities.
+            I am <span className="about_span"> Self-motivated</span>, highly
+            <span className="about_span"> passionate</span> and quickly
+            <span className="about_span"> adaptable</span> person looking for an
+            opportunity to work in a challenging organization where I can learn
+            new skills, expand my
+            <span className="about_span"> knowledge</span> and to work towards
+            the growth of the organization to the best of my abilities.
           </p>
           <p>
-            I am admired by the working function of webpage, which make me more
-            interest on learning how they work. so as started to learn on myself
-            using stuffs in online.
+            I am admired by the features of webpage, which make me start to
+            learn interesting things of how they work.
           </p>
           <p>
-            currently: Doing certification as MERN stack developer in GUVI Geek
-            Networks, IITM Research Park
+            <span className="about_span">Currently:</span> Doing certification
+            as <span className="about_span"> MERN</span> stack developer in GUVI
+            Geek Networks, IITM Research Park.
           </p>
           <p>Here are a few technologies that I work with:-</p>
         </div>

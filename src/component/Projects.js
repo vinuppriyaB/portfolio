@@ -5,7 +5,7 @@ import youtube from "../image/youtube.png";
 import stack from "../image/stack.png";
 import movielist from "../image/movielist.png";
 import chat from "../image/chat.png";
-import prettyshop from "../image/prettyshop.png";
+import ec from "../image/ec.png";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -25,7 +25,7 @@ const data = [
     gitFrontLink: "https://github.com/vinuppriyaB/f-youtube-clone",
     gitBackLink: "https://github.com/vinuppriyaB/back-yt",
     discription:
-      "This is an clone of our favorite YouTube. Where we can create account, watch videos by search ,post videos and we can post comment and reply. Database Model was created by using Mongoose.",
+      "This is an clone of our favorite YouTube Application With authentication of User Login and Register. Where we can create account, watch videos by search, post videos and we can post comment and reply.",
     by: ["ReactJS", "Nodejs", "Express", "MongoDB", "Mongoose"],
   },
   {
@@ -35,27 +35,27 @@ const data = [
     gitFrontLink: "https://github.com/vinuppriyaB/frontend-hack2",
     gitBackLink: "https://github.com/vinuppriyaB/hack2-node",
     discription:
-      "This is an clone of StackOverFlow website. Where we can create account, see solution by search ,post our question in public for which we need solution and we can post solution to the other question.",
+      "This is an clone of StackOverFlow website. Where we can create account, see solution by search, post our question in public for which we need solution and we can post our solution to the question.",
     by: ["ReactJS", "Nodejs", "Express", "MongoDB"],
   },
   {
     name: "E-Commerce Website",
-    image: prettyshop,
+    image: ec,
     liveLink: "https://suspicious-kare-885e10.netlify.app",
     gitFrontLink: "https://github.com/vinuppriyaB/Ecommerce-front",
     gitBackLink: "https://github.com/vinuppriyaB/Ecommerce-node",
     discription:
-      " E-Commerce Web Application with authentication of User Login and Register. The Application has all the necessary features like add to cart and integrated with Stripe Payment Gateway. ",
+      "Developed an E-Commerce Web Application With authentication of User Login and Register. The Application has all the necessary features like add to cart and integrated with Stripe Payment Gateway.",
     by: ["ReactJS", "Nodejs", "Express", "MongoDB", "Mongoose", "Stripe"],
   },
   {
-    name: "We talk",
+    name: "Chat Application",
     image: chat,
     liveLink: "https://zealous-morse-54b38e.netlify.app",
     gitFrontLink: "https://github.com/vinuppriyaB/frontend-we-talk",
     gitBackLink: "https://github.com/vinuppriyaB/backend-we-talk",
     discription:
-      "This is chat application. It having functionality of authentication,send message to the respective person who have an account or created group. Using socket.io to make the application live",
+      "Developed an Chat Application With authentication of User Login and Register. The Application has necessary features like create group and send message to the respective person who have an account.",
     by: ["ReactJS", "Nodejs", "Express", "MongoDB", "Mongoose"],
   },
 ];
@@ -128,18 +128,19 @@ function ProjectCard({
         <CardContent>
           <Typography
             gutterBottom
+            className="project_title"
             // variant="h5"
-            style={{ color: "rgba(234, 180, 30)", fontSize: "25px" }}
+            style={{ color: "rgba(234, 180, 30)" }}
             component="div"
           >
             {name}
           </Typography>
           <Typography
             variant="subtitle1"
-            style={{
-              color: "rgba(160, 167, 165)",
-              fontSize: "20px",
-            }}
+            className="project_discription"
+            // style={{
+
+            // }}
           >
             {discription}
           </Typography>
@@ -150,45 +151,57 @@ function ProjectCard({
           ))}
         </CardActions>
         <CardActions>
-          <Button
-            className="project_btn"
-            aria-owns={open ? "mouse-over-popover" : undefined}
-            aria-haspopup="true"
-            onMouseEnter={handlePopoverOpen}
-            onMouseLeave={handlePopoverClose}
-          >
-            Live <ChevronRightOutlinedIcon className="projectIcon" />
-            <Popover
-              id="mouse-over-popover"
+          <a href={liveLink} target="_blank">
+            <Button
+              className="project_btn"
+              aria-owns={open ? "mouse-over-popover" : undefined}
+              aria-haspopup="true"
               onMouseEnter={handlePopoverOpen}
               onMouseLeave={handlePopoverClose}
-              sx={{
-                pointerEvents: "none",
-              }}
-              open={open}
-              anchorEl={anchorEl}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              onClose={handlePopoverClose}
-              // disableRestoreFocus
             >
-              <Typography sx={{ p: 1 }}>Credential</Typography>
-              <Typography sx={{ p: 1 }}>Email : checkout@gmail.com</Typography>
-              <Typography sx={{ p: 1 }}>password : qwerty</Typography>
-            </Popover>
-          </Button>
-          <Button className="project_btn">
-            client <GitHubIcon className="projectIcon" />
-          </Button>
-          <Button className="project_btn">
-            server <GitHubIcon className="projectIcon" />
-          </Button>
+              Live <ChevronRightOutlinedIcon className="projectIcon" />
+            </Button>
+          </a>
+          <Popover
+            id="mouse-over-popover"
+            onMouseEnter={handlePopoverOpen}
+            onMouseLeave={handlePopoverClose}
+            sx={{
+              pointerEvents: "none",
+            }}
+            open={open}
+            anchorEl={anchorEl}
+            anchorOrigin={{
+              vertical: "bottom",
+              horizontal: "left",
+            }}
+            transformOrigin={{
+              vertical: "top",
+              horizontal: "left",
+            }}
+            onClose={handlePopoverClose}
+            // disableRestoreFocus
+          >
+            <Typography className="project_popover" sx={{ p: 1 }}>
+              Credential
+            </Typography>
+            <Typography className="project_popover" sx={{ p: 1 }}>
+              Email : checkout@gmail.com
+            </Typography>
+            <Typography className="project_popover" sx={{ p: 1 }}>
+              password : qwerty
+            </Typography>
+          </Popover>
+          <a href={gitFrontLink} target="_blank">
+            <Button className="project_btn">
+              client <GitHubIcon className="projectIcon" />
+            </Button>
+          </a>
+          <a href={gitBackLink} target="_blank">
+            <Button className="project_btn">
+              server <GitHubIcon className="projectIcon" />
+            </Button>
+          </a>
         </CardActions>
       </Card>
     </Card>

@@ -55,7 +55,7 @@ const About = () => {
           </Button>
         </a>
         <a
-          href="https://drive.google.com/file/d/1e5wasI4N9z0OSovIdzET9VyS7ejwwWD1/view"
+          href="https://drive.google.com/file/d/10DXTcHPjRtK3cPW7uoAiKkjlxf252GwY/view?usp=sharing"
           target="_blank"
         >
           <Button className="Resume_btn" variant="outlined">
