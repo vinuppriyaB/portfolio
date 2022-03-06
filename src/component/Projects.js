@@ -27,6 +27,8 @@ const data = [
     discription:
       "This is an clone of our favorite YouTube Application With authentication of User Login and Register. Where we can create account, watch videos by search, post videos and we can post comment and reply.",
     by: ["ReactJS", "Nodejs", "Express", "MongoDB", "Mongoose"],
+    Email: "checkout@gmail.com",
+    pass: "qwerty",
   },
   {
     name: "StackOverflow Clone",
@@ -37,6 +39,8 @@ const data = [
     discription:
       "This is an clone of StackOverFlow website. Where we can create account, see solution by search, post our question in public for which we need solution and we can post our solution to the question.",
     by: ["ReactJS", "Nodejs", "Express", "MongoDB"],
+    Email: "checkout@gmail.com",
+    pass: "Qwerty@123",
   },
   {
     name: "E-Commerce Website",
@@ -47,6 +51,8 @@ const data = [
     discription:
       "Developed an E-Commerce Web Application With authentication of User Login and Register. The Application has all the necessary features like add to cart and integrated with Stripe Payment Gateway.",
     by: ["ReactJS", "Nodejs", "Express", "MongoDB", "Mongoose", "Stripe"],
+    Email: "checkout@gmail.com",
+    pass: "qwerty",
   },
   {
     name: "Chat Application",
@@ -57,6 +63,8 @@ const data = [
     discription:
       "Developed an Chat Application With authentication of User Login and Register. The Application has necessary features like create group and send message to the respective person who have an account.",
     by: ["ReactJS", "Nodejs", "Express", "MongoDB", "Mongoose"],
+    Email: "checkout@gmail.com",
+    pass: "qwerty",
   },
 ];
 export const Projects = () => {
@@ -77,6 +85,8 @@ export const Projects = () => {
             gitBackLink={d.gitBackLink}
             discription={d.discription}
             by={d.by}
+            Email={d.Email}
+            pass={d.pass}
           />
         ))}
       </div>
@@ -92,6 +102,8 @@ function ProjectCard({
   gitBackLink,
   discription,
   by,
+  Email,
+  pass,
 }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -186,10 +198,10 @@ function ProjectCard({
               Credential
             </Typography>
             <Typography className="project_popover" sx={{ p: 1 }}>
-              Email : checkout@gmail.com
+              Email : {Email}
             </Typography>
             <Typography className="project_popover" sx={{ p: 1 }}>
-              password : qwerty
+              Password : {pass}
             </Typography>
           </Popover>
           <a href={gitFrontLink} target="_blank">
