@@ -45,7 +45,7 @@ const data = [
   {
     name: "E-Commerce Website",
     image: ec,
-    liveLink: "https://suspicious-kare-885e10.netlify.app",
+    liveLink: "https://gallant-hypatia-283992.netlify.app",
     gitFrontLink: "https://github.com/vinuppriyaB/Ecommerce-front",
     gitBackLink: "https://github.com/vinuppriyaB/Ecommerce-node",
     discription:
