@@ -16,12 +16,13 @@ import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
 import Typography from "@mui/material/Typography";
 import { Skills } from "./Skills";
 import Popover from "@mui/material/Popover";
-
+import EmailIcon from "@mui/icons-material/Email";
+import LockOpenRoundedIcon from "@mui/icons-material/LockOpenRounded";
 const data = [
   {
     name: "YouTube Clone",
     image: youtube,
-    liveLink: "https://sad-nightingale-2f5997.netlify.app",
+    liveLink: "https://you-tube-clone-application.netlify.app",
     gitFrontLink: "https://github.com/vinuppriyaB/f-youtube-clone",
     gitBackLink: "https://github.com/vinuppriyaB/back-yt",
     discription:
@@ -33,7 +34,7 @@ const data = [
   {
     name: "StackOverflow Clone",
     image: stack,
-    liveLink: "https://distracted-hopper-a7aa6a.netlify.app",
+    liveLink: "https://stackoverflow-clone-application.netlify.app",
     gitFrontLink: "https://github.com/vinuppriyaB/frontend-hack2",
     gitBackLink: "https://github.com/vinuppriyaB/hack2-node",
     discription:
@@ -45,7 +46,7 @@ const data = [
   {
     name: "E-Commerce Website",
     image: ec,
-    liveLink: "https://gallant-hypatia-283992.netlify.app",
+    liveLink: "https://prettyshop-ecommerce-application.netlify.app",
     gitFrontLink: "https://github.com/vinuppriyaB/Ecommerce-front",
     gitBackLink: "https://github.com/vinuppriyaB/Ecommerce-node",
     discription:
@@ -57,7 +58,7 @@ const data = [
   {
     name: "Chat Application",
     image: chat,
-    liveLink: "https://zealous-morse-54b38e.netlify.app",
+    liveLink: "https://we-talk-chat-application.netlify.app",
     gitFrontLink: "https://github.com/vinuppriyaB/frontend-we-talk",
     gitBackLink: "https://github.com/vinuppriyaB/backend-we-talk",
     discription:
@@ -67,9 +68,13 @@ const data = [
     pass: "qwerty",
   },
 ];
-export const Projects = () => {
+export const Projects = ({ select, setSelect }) => {
   return (
-    <div className="project_container" id="Project">
+    <div
+      className="project_container"
+      id="Project"
+      onMouseOver={() => setSelect([false, false, true, false])}
+    >
       <p className="project_heading">My WORKS</p>
       <p className="project_line">
         Here's some of my projects that I have worked on.
@@ -169,18 +174,16 @@ function ProjectCard({
               aria-owns={open ? "mouse-over-popover" : undefined}
               aria-haspopup="true"
               onMouseEnter={handlePopoverOpen}
-              onMouseLeave={handlePopoverClose}
+              // onMouseLeave={handlePopoverClose}
             >
               Live <ChevronRightOutlinedIcon className="projectIcon" />
             </Button>
           </a>
           <Popover
             id="mouse-over-popover"
-            onMouseEnter={handlePopoverOpen}
+            // onMouseEnter={handlePopoverOpen}
             onMouseLeave={handlePopoverClose}
-            sx={{
-              pointerEvents: "none",
-            }}
+            sx={{}}
             open={open}
             anchorEl={anchorEl}
             anchorOrigin={{
@@ -194,14 +197,42 @@ function ProjectCard({
             onClose={handlePopoverClose}
             // disableRestoreFocus
           >
-            <Typography className="project_popover" sx={{ p: 1 }}>
+            <Typography
+              className="project_popover"
+              sx={{
+                p: 1,
+                textAlign: "center",
+                backgroundColor: "rgba(234, 180, 30)",
+                color: "rgba(8, 46, 78)",
+              }}
+            >
               Credential
             </Typography>
-            <Typography className="project_popover" sx={{ p: 1 }}>
-              Email : {Email}
+            <Typography
+              className="project_popover"
+              sx={{
+                p: 1,
+                backgroundColor: "rgba(234, 180, 30)",
+                color: "rgba(8, 46, 78)",
+                alignItems: "center",
+                display: "flex",
+                gap: "10px",
+              }}
+            >
+              <EmailIcon /> {Email}
             </Typography>
-            <Typography className="project_popover" sx={{ p: 1 }}>
-              Password : {pass}
+            <Typography
+              className="project_popover"
+              sx={{
+                p: 1,
+                backgroundColor: "rgba(234, 180, 30)",
+                color: "rgba(8, 46, 78)",
+                alignItems: "center",
+                display: "flex",
+                gap: "10px",
+              }}
+            >
+              <LockOpenRoundedIcon /> {pass}
             </Typography>
           </Popover>
           <a href={gitFrontLink} target="_blank">

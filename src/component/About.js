@@ -7,9 +7,13 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Typewriter from "typewriter-effect";
 
-const About = () => {
+const About = ({ select, setSelect }) => {
   return (
-    <div className="About_container" id="Home">
+    <div
+      className="About_container"
+      id="Home"
+      onMouseOver={() => setSelect([true, false, false, false])}
+    >
       <div>
         <p className="hi_text">Hi, there </p>
         <p className="myname">
@@ -55,7 +59,7 @@ const About = () => {
           </Button>
         </a>
         <a
-          href="https://drive.google.com/file/d/10DXTcHPjRtK3cPW7uoAiKkjlxf252GwY/view?usp=sharing"
+          href="https://drive.google.com/file/d/1fATikU4nnnvDlCdBUZGFlvM0cvOKYQix/view?usp=sharing"
           target="_blank"
         >
           <Button className="Resume_btn" variant="outlined">

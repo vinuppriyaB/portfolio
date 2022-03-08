@@ -11,9 +11,10 @@ import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemButton from "@mui/material/ListItemButton";
-export function Header() {
+export function Header({ select, setSelect }) {
+  console.log(select);
   const history = useHistory();
-  const [select, setSelect] = useState([true, false, false, false]);
+
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {

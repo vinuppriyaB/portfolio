@@ -43,9 +43,13 @@ const skill = [
   },
 ];
 
-const AboutMe = () => {
+const AboutMe = ({ select, setSelect }) => {
   return (
-    <div className="AboutMe_container" id="About">
+    <div
+      className="AboutMe_container"
+      id="About"
+      onMouseOver={() => setSelect([false, true, false, false])}
+    >
       <p className="About_heading">About</p>
       <div className="About_wrapper">
         <div className="about_text">
@@ -73,7 +77,7 @@ const AboutMe = () => {
       </div>
       <div className="Skill_imageContainer">
         {skill.map((s, index) => (
-          <div className="Skill_imagebox">
+          <div className="Skill_imagebox" key={index}>
             <p className="Skill_titles">{s.title}</p>
             <img className="Skill_image" src={s.img} alt={s.title} />
           </div>

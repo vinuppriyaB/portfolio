@@ -43,7 +43,7 @@ const skill = [
   },
 ];
 
-export const Skills = () => {
+export const Skills = ({ select, setSelect }) => {
   return (
     <div className="skills">
       <h2 className="skill_heading">SKILLS</h2>

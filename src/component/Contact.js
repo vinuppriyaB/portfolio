@@ -6,9 +6,13 @@ import EmailIcon from "@mui/icons-material/Email";
 import image from "../image/contact.jpg";
 import { Link } from "react-router-dom";
 
-export const Contact = () => {
+export const Contact = ({ select, setSelect }) => {
   return (
-    <div className="Contact_container" id="Contact">
+    <div
+      className="Contact_container"
+      id="Contact"
+      onMouseOver={() => setSelect([false, false, false, true])}
+    >
       <div className="contact_text">
         <p className="Contact_heading">Let's connect</p>
         <div className="text_details">

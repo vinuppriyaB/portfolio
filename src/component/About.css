@@ -86,7 +86,7 @@ a{
 } */
 
 .About_container {
-  min-height: 53vw;
+  min-height: 38vw;
   display: flex;
   flex-direction: column;
   justify-content: center;

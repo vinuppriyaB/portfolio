@@ -1,4 +1,5 @@
 import "./App.css";
+import React, { useState, useEffect } from "react";
 import { Header } from "./component/Header";
 import {
   BrowserRouter as Router,
@@ -14,17 +15,18 @@ import About from "./component/About";
 import AboutMe from "./component/AboutMe";
 
 function App() {
+  const [select, setSelect] = useState([true, false, false, false]);
   return (
     <div>
       <div className="App">
         <Router>
           <Switch>
             <Route exact path="/">
-              <Header />
-              <About />
-              <AboutMe />
-              <Projects />
-              <Contact />
+              <Header select={select} setSelect={setSelect} />
+              <About select={select} setSelect={setSelect} />
+              <AboutMe select={select} setSelect={setSelect} />
+              <Projects select={select} setSelect={setSelect} />
+              <Contact select={select} setSelect={setSelect} />
             </Route>
             <Route exact path="/skill">
               <Header />
