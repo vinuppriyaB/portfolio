@@ -67,6 +67,18 @@ const data = [
     Email: "checkout@gmail.com",
     pass: "qwerty",
   },
+  {
+    name: "Job Portal Application",
+    image: chat,
+    liveLink: "https://we-talk-chat-application.netlify.app",
+    gitFrontLink: "https://github.com/vinuppriyaB/frontend-we-talk",
+    gitBackLink: "https://github.com/vinuppriyaB/backend-we-talk",
+    discription:
+      "Developed an Chat Application With authentication of User Login and Register. The Application has necessary features like create group and send message to the respective person who have an account.",
+    by: ["ReactJS", "Nodejs", "Express", "MongoDB", "Mongoose"],
+    Email: "checkout@gmail.com",
+    pass: "qwerty",
+  },
 ];
 export const Projects = ({ select, setSelect }) => {
   return (
