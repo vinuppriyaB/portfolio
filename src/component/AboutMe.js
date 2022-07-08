@@ -5,7 +5,9 @@ import html from "../image/html.png";
 import css from "../image/css.png";
 import js from "../image/js.png";
 import react from "../image/react.png";
+import nuxt from "../image/nuxt.png";
 import node from "../image/node.png";
+import vue from "../image/vue.png";
 
 const skill = [
   {
@@ -41,6 +43,14 @@ const skill = [
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMICJLNu5ayN43kKfE2YWkCY1s_DeTWBOIS9EWVH-N91NcU7EFr5H-oonahdwlAhBJNQ&usqp=CAU",
     title: "Mongoose",
   },
+  {
+    img: vue,
+    title: "vue JS",
+  },
+  {
+    img: nuxt,
+    title: "Nuxt JS",
+  },
 ];
 
 const AboutMe = ({ select, setSelect }) => {
@@ -67,7 +77,7 @@ const AboutMe = ({ select, setSelect }) => {
             learn interesting things of how they work.
           </p>
           <p>
-            <span className="about_span">Currently:</span> Doing certification
+            <span className="about_span">Last Move :</span> Done certification
             as <span className="about_span"> MERN</span> stack developer in GUVI
             Geek Networks, IITM Research Park.
           </p>
